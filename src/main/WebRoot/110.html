@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>故障申报</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/uibox.css">
+	<link rel="stylesheet" type="text/css" href="css/webapp.css">
+	<script src="js/jquery1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/plugins.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/layer.js" type="text/javascript" charset="utf-8"></script><link id="layermcss" rel="styleSheet" type="text/css" href="css/layer.css"></head>
+
+<body>
+<!--loading start-->
+<div style="display: none;" id="preloader">
+	<div style="display: none;" id="status">
+    	<p class="center-text">
+			请稍后，页面内容正在加载中……
+            <em>TIPS：加载速度取决于您的网速哦~</em>
+        </p>
+    </div>
+</div>
+<!--loading end-->
+
+<div class="top_top">
+	<ul class="clearfix">
+		<li class="tit clearfix"><a href="http://weixin.96516.net/gdyxv2/index.php?s=/addon/WuhanYouXian/Business/BusinessProductShow/catalogid/79901/pcode/00000000RV.html" class="re"></a>故障申报</li>
+		<li class="city">
+			<span>拉萨</span>
+		</li>
+	</ul>
+</div>
+
+<div class="wrap">
+        <section class="login-box">
+            <div class="login-val">
+                <img src="img/icon_user.png" alt="">
+                <input id="quick-code" type="tel" placeholder="姓名" maxlength="6" onkeyup="changeLogonBtnColor()">
+            </div>
+        </section>
+        <section class="login-box">
+            <div class="login-val">
+                <img src="img/phone.png" alt="">
+                <input id="quick-code" type="tel" placeholder="电话" maxlength="6" onkeyup="changeLogonBtnColor()">
+            </div>
+        </section>
+        <section class="login-box">
+            <div class="login-val">
+                <img src="img/icon_addr.png" alt="">
+                <input id="quick-code" type="tel" placeholder="地址" maxlength="6" onkeyup="changeLogonBtnColor()">
+            </div>
+        </section>
+        <section class="login-box">
+            <div class="login-val">
+                <img src="img/email.png" alt="">
+                <input id="quick-code" type="tel" placeholder="邮箱" maxlength="6" onkeyup="changeLogonBtnColor()">
+            </div>
+        </section>
+        <section class="login-box">
+            <div class="login-val">
+                <img src="img/icon_long.png" alt="">
+                <input id="quick-code" type="tel" placeholder="内容" maxlength="6" onkeyup="changeLogonBtnColor()">
+            </div>
+        </section>
+
+        <div class="login-btn">
+            <a id="quick-sub" href="javascript:void(0);">提交</a>
+        </div>
+            </div>
+<script type="text/javascript">
+$().ready(function(){
+	var content;
+	$('#foot_buy2 #giftsend').click(function(){
+		layer.open({
+			iconType: 4,
+			content: '您确认购买该节目作为礼品赠送？',
+			btn: ['确认', '取消'],
+			style: 'width:80%;',
+			yes: function(){
+				$.ajax( {  
+					url: 'http://weixin.96516.net/gdyxv2/index.php?s=/addon/WuhanYouXian/Account/AccountGiftBuycar.html',
+					data:{  
+						cid		: '79901',  
+						pcode	: '00000000RV',
+						val		: '1'
+					},   
+					type:'post',  
+					cache:false,  
+					dataType:'json',  
+					success:function(data)
+					{
+						location.href = 'http://weixin.96516.net/gdyxv2/index.php?s=/addon/WuhanYouXian/Account/AccountGiftCategory.html';
+						return false;
+					},  
+					error : function()
+					{  
+						alert("参数异常，请重试！"); 
+						return false;
+					}
+				});
+			},
+			no: function(){ layer.close(); },
+		});
+	});
+});
+</script>
+<div class="align_c p10 f888 f80" style="margin-bottom: 50px;">
+<p>西藏广播电视信息网络有限公司</p>
+<p>© 2016 版权所有 &nbsp;&nbsp;</p>
+</div>
+<div class="foot_nav clearfix">
+	<a href="1.html" class="wei"><span style="color:#333;font-size: 16px;">自助服务</span></a>
+	<a href="2.html" class="yw"><span style="color:#333;font-size: 16px;">热门资讯</span></a>
+	<a href="3.html" class="my"><span style="color:#333;font-size: 16px;">会员服务</span></a>
+</div>
+</body></html>

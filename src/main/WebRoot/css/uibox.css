@@ -1,0 +1,74 @@
+.boxy-wrapper { position: absolute; }
+.boxy-wrapper.fixed { position: fixed; }
+
+  /* Modal */
+  
+  .boxy-modal-blackout { position: absolute; background-color: black; left: 0; top: 0; }
+  
+  /* Border */
+
+  .boxy-wrapper { empty-cells: show; }
+	.boxy-wrapper .boxy-top-left,
+	.boxy-wrapper .boxy-top-right,
+	.boxy-wrapper .boxy-bottom-right,
+	.boxy-wrapper .boxy-bottom-left { width: 6px; height: 6px; padding: 0 }
+	
+	.boxy-wrapper .boxy-top-left { background:url('boxy-nw.png') no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='boxy-nw.png', sizingMethod='crop');}
+	.boxy-wrapper .boxy-top-right { background:url('boxy-ne.png') no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='boxy-ne.png', sizingMethod='crop');}
+	.boxy-wrapper .boxy-bottom-right { background:url('boxy-se.png') no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='boxy-se.png', sizingMethod='crop');}
+	.boxy-wrapper .boxy-bottom-left {  background:url('boxy-sw.png') no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='boxy-sw.png', sizingMethod='crop');}
+	
+	
+	
+	.boxy-wrapper .boxy-top,
+	.boxy-wrapper .boxy-bottom { height: 6px; background-color: black; opacity: 0.3; filter: alpha(opacity=40); padding: 0 }
+	
+	.boxy-wrapper .boxy-left,
+	.boxy-wrapper .boxy-right { width: 6px; background-color: black; opacity: 0.3; filter: alpha(opacity=40); padding: 0 }
+	
+	/* Title bar */
+	
+	.boxy-wrapper .title-bar { background-color:#222021; padding:0 15px; height:40px; line-height:40px; position: relative; text-align:left}
+	  .boxy-wrapper .title-bar.dragging { cursor: move; }
+	    .boxy-wrapper .title-bar h2 { font-size: 16px; font-family:'微软雅黑'; color: white;  margin: 0; padding: 0; font-weight:normal; }
+	    .boxy-wrapper .title-bar .close {position: absolute; top:8px; right:10px; display:block; background:url(close.png) no-repeat center center; height:25px; width:25px; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+	    .boxy-wrapper .title-bar .close:hover{filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity: 0.9; opacity: 0.9;}
+		
+	/* Content Region */
+	
+	.boxy-inner { background-color: white; padding: 0; color:#333; }
+	.boxy-inner a:link{}
+		.boxy-inner a.null{color:#345974;}
+	.boxy-content .pop tr{line-height:30px;}
+	
+	/* Question Boxes */
+
+    .boxy-wrapper .question { width: 350px; min-height: 80px; padding: 15px;}
+    .boxy-wrapper .answers { margin:0px auto; width:150px; padding-bottom:10px}
+	.boxy-wrapper .photoShow{padding:10px;overflow:hidden}
+	.boxy-wrapper .photoShow h4{font-size:12px;font-weight:400}
+	.boxy-wrapper .photoShow h5{font-size:12px;font-weight:400;line-height:30px}
+	.boxy-wrapper .photoShow img{padding:2px;border:#ccc solid 1px;float:left;margin:0 10px 0 0}
+	
+	
+	.load{background:url(icon_waiting.gif) no-repeat 0 0; height:32px; line-height:32px; display:inline-block; padding-left:40px; margin-top:20px;}
+    
+    
+	/* tips message */
+	.html_clew_box { color:#ffffff; position:absolute; z-index:999999; margin-top:1px; border:3px solid #ffffff; background-color:#639CB5; box-shadow:0 0 10px #666666;}
+	.clew_error { background-position:0 bottom; }
+	.html_clew_box_close { clear:both; display:none }
+	.html_clew_box_con { white-space: nowrap;}
+	.ico_waiting { background:url(icon_waiting.gif) no-repeat 0 0; height:32px; line-height:32px; display:inline-block; padding-left:40px; }
+	.boxy-content { text-align:left; padding:10px; font-size:14px;}
+	#input_dismissed { margin:10px 0 10px 0; }
+	
+	/* uibox's skin */
+	.html_clew_box .uibox_error1{ background:url(uibox_error1.png) no-repeat 0 center; height:32px; line-height:32px; display:inline-block; padding-left:40px; color:#666;}
+
+	/* uibox's skin */
+	.html_clew_box_black{ border:none; background:#333333; text-align:center; border-radius:5px;}
+	.html_clew_box_white{ border:none; background:#ffffff; text-align:center; border-radius:5px; color:#333333}
+	
+	
+	

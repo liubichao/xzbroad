@@ -1,0 +1,314 @@
+*{font-size:12px; font-family:Tahoma,Verdana,΢���ź�,������}
+body{background:#D2E0F2; }
+a{ color:Black; text-decoration:none;}
+a:hover{ color:Red; text-decoration:underline;}
+.textbox03 {border: #878787 1px solid;padding: 4px 3px;font:Verdana, Geneva, sans-serif,����;line-height: 14px; background-color: #fff;  height: auto; font-size: 14px;  font-weight: bold; width: 190px; }
+
+.txt01{font:Verdana, Geneva, sans-serif,����;padding:3px 2px 2px 2px; border-width:1px; border-color:#ddd;  color:#000;}
+.txt {border: #878787 1px solid;padding: 4px 3px;font:Verdana, Geneva, sans-serif,����;line-height: 14px; background-color: #fff;  height: auto; font-size: 14px;}
+.footer{text-align:center;color:white; margin:0px; padding:0px;line-height:23px; font-weight:bold;}
+
+.head a{color:White;text-decoration:underline;}
+
+.easyui-accordion ul{list-style-type:none;margin:0px; padding:10px;}
+.easyui-accordion ul li{ padding:0px;}
+.easyui-accordion ul li a{line-height:24px;}
+.easyui-accordion ul li div{margin:2px 0px;padding-left:10px;padding-top:2px;}
+.easyui-accordion ul li div.hover{border:1px dashed #99BBE8; background:#E0ECFF;cursor:pointer;}
+.easyui-accordion ul li div.hover a{color:#416AA3;}
+.easyui-accordion ul li div.selected{border:1px solid #99BBE8; background:#E0ECFF;cursor:default;}
+.easyui-accordion ul li div.selected a{color:#416AA3; font-weight:bold;}
+
+
+
+.icon{padding:2px 9px; background:url(../images/tabicons.png) no-repeat; }
+.icon-sys{ background:url(../images/directory.png) no-repeat;}
+.icon-wrenchs{ 
+    background:url(../image/wrench.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-computers{ 
+    background:url(../image/computer.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-houses{ 
+    background:url(../images/house.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-pages{ 
+    background:url(../image/page.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-baobiaos{ 
+    background:url(../image/baobiao.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-warn{ 
+    background:url(../image/yujing.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-notes{ 
+    background:url(../image/note.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-phones{ 
+    background:url(../image/phone.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-user_comments{ 
+    background:url(../image/user_comment.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-cogs{ 
+    background:url(../image/cog.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-chart_pies{ 
+    background:url(../image/chart_pie.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-chart_lines{ 
+    background:url(../image/chart_line.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-monitors{ 
+    background:url(../image/monitor.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-application_cascades{ 
+    background:url(../image/application_cascade.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-application_form_magnifys{ 
+    background:url(../image/application_form_magnify.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-application_tile_verticals{ 
+    background:url(../image/application_tile_vertical.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-chart_bars{ 
+    background:url(../image/chart_bar.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-sim_cards{ 
+    background:url(../image/sim_card.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-informations{ 
+    background:url(../image/information.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-htmls{ 
+    background:url(../image/html.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-color_swatchs{ 
+    background:url(../image/color_swatch.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-usersss{ 
+    background:url(../image/user.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-video{ 
+    background:url(../images/media.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-status_onlines{ 
+    background:url(../image/status_online.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-keys{ 
+    background:url(../image/key.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-groups{ 
+    background:url(../image/group.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+
+.icon-userGroup{ 
+    background:url(../image/user_group.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+
+.icon-books{ 
+    background:url(../image/book.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-dataManageS{ 
+    background:url(../image/data1.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-dataManageH{ 
+    background:url(../image/data2.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.icon-add{background-position: -19px 0px;}
+.icon-nav{background-position: -100px -18px;}
+.icon-users{background-position: -100px -480px;}
+.icon-role{background-position: -360px -200px;}
+.icon-set{background-position: -380px -200px;}
+.icon-log{background-position: -380px -80px;}
+
+
+a:hover{color:red;}
+#container{height:100%}
+	
+.iw_poi_title{color: #CC5522;font-size: 16px;font-weight: bold;overflow: hidden;padding-right: 13px;white-space: nowrap;}
+.iw_poi_content{font: 12px arial,sans-serif;overflow: visible;padding-top: 4px;white-space: -moz-pre-wrap;word-wrap: break-word;}
+
+#nav{height:24px;color:#088043;font-size:14px;line-height:24px;padding-left:8px;border:1px solid #d3d3d3;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;
+		background:#ececf3;-moz-box-shadow:0px 4px 5px #9C9C9C;-webkit-box-shadow:0px 4px 5px #9C9C9C;box-shadow:0px 4px 5px #9C9C9C;behavior: url(/ZXJC/css/pie.htc);
+	}

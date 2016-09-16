@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no" />
+	<title>用户中心</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css?v="/>
+	<link rel="stylesheet" type="text/css" href="css/uibox.css"/>
+	<script src="js/jquery1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/plugins.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/layer.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+<body>
+<!--loading start-->
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			请稍后，页面内容正在加载中……
+            <em>TIPS：加载速度取决于您的网速哦~</em>
+        </p>
+    </div>
+</div>
+<!--loading end-->
+
+<div class="top_top">
+	<ul class="clearfix">
+		<li class="tit clearfix"><a href="javascript:void(0)" class="re"></a> 用户中心</li>
+		<li class="city">
+			<span>拉萨</span>
+		</li>
+	</ul>
+</div>
+
+<div class="p15 AccountIndex AccountIndex_no">
+	<div class="box p15 member">
+		<div class="info check">
+			<p>您的微信还未关联账号</p>
+						<span class="but_green_sma" id="BindAccount">下一步关联账号</span>		</div>
+	</div>
+	<div class="box p15 mt12 action">
+		<div class="item order"><span>订单管理</span></div>
+		<div class="item use"><span>在用产品</span></div>
+		<div class="item recharge"><span>充值中心</span></div>
+		<div class="item tickets"><span>我的优惠券</span></div>
+		<div class="item site"><span>营业网点</span></div>
+		<div class="item form"><span>售后申报</span></div>
+		<a href="lipin.html" class="item gift border_no"><span id="Aoc">礼品中心</span><small class="hot"></small></a>
+		<font color="#666">(无论您是否广电用户，在此可购买节目包通过微信送给好友使用)</font>
+	</div>
+</div>
+
+<script>
+$().ready(function(){
+	$('#BindAccount').click(function(){
+		var html = '<table width="100%" cellpadding="5" cellspacing="0" border="0" class="layer_table">';
+		html += '<tr><th><font color="red">*</font> 有线卡号</th><td class="align_l"><input type="tel" name="icno" id="icno" placeholder="卡号" class="input1" onkeyup="this.value=this.value.replace(/\D/g,\'\')" onafterpaste="this.value=this.value.replace(/\D/g,\'\')" /></td></tr>';
+		html += '<tr><th width="80"><font color="red">*</font>卡主姓名</th><td class="align_l"><input type="text" name="custname" id="custname" class="input1" placeholder="姓名"  size="13" /></td></tr>';
+		html += '<tr><th><font color="red">*</font>业务类型</th><td class="align_l"><select name="permark" id="permark" class="select1"><option value="">-选择业务类型-</option><option value="1">数字智能卡号</option><option vlue="2">宽带账号</option><option vlue="3">互动账号</option></select></td></tr>';
+		html += '</table>';
+		
+		var index = layer.open({
+			title:'微信绑定有线帐号',
+			content: html,
+			btn: ['提交绑定', '关闭取消'],
+			yes: function(){
+				var icno		= $('#icno').val();
+				var custname	= $('#custname').val();
+				var permark		= $('#permark').val();
+				if( icno.length < 5 )
+				{
+					layer.open( { type:1, content:'<div class="p10_20">有线卡号 未填写</div>',  btn: ['关闭']} );
+					$('#icno').focus();
+					return false;
+				}
+				if( custname == '' )
+				{
+					layer.open( { type:1, content:'<div class="p10_20">卡主姓名 未填写</div>',  btn: ['关闭']} );
+					$('#custname').focus();
+					return false;
+				}
+				if( permark == '' )
+				{
+					layer.open( { type:1, content:'<div class="p10_20">业务类型 未选择</div>',  btn: ['关闭']} );
+					$('#permark').focus();
+					return false;
+				}
+				
+				var index_load = layer.open( { type:1, content:'<div class="p10_20">正在处理中……</div>'} );
+				var option = { icno:icno, custname:custname, permark:permark };
+				
+				$.post('http://weixin.96516.net/gdyxv2/index.php?s=/addon/WuhanYouXian/Account/AccountAdd.html', option, function(str){
+					layer.close(index_load);
+					var obj = JSON.parse(str);
+					if( obj.status == 1 )
+					{
+						layer.open( { iconType:2, content: obj.msg, btn: ['关闭'], yes: function(){ location.reload(); } } );
+						return false;
+					}
+					else
+					{
+						var content = '<div class="p15">'+obj.msg+'</div>';
+						layer.open( { type:1, iconType:3, content:content , time:3 } );
+						return false;
+					}
+					
+				});
+			},
+			no: function(){
+				layer.close(index);
+			}
+		});
+	});
+});
+</script>
+
+
+<div class="align_c p10 f888 f80">
+<p>西藏广播电视信息网络有限公司</p>
+<p>© 2016 版权所有 &nbsp;&nbsp;</p>
+</div>
+<div class="foot_nav clearfix">
+	<a href="1.html" class="wei"><span>自助服务</span></a>
+	<a href="2.html" class="yw"><span>热门资讯</span></a>
+	<a href="3.html" class="my"><span>会员服务</span></a>
+</div>
+</body>
+</html>
